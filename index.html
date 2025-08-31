@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AICM Website</title>
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="header">
+        <a href="#" class="logo">AICM</a>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <nav id="navLinks" class="nav-links">
+            <a href="#about">About Us</a>
+            <a href="#services">Our Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div id="navOverlay" class="nav-overlay"></div>
+    </header>
+
+    <!-- Overlay background for mobile nav -->
+    <div id="navOverlay" class="nav-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-left">
+            <h1 class="hero-title">Welcome to <span class="hero-title-ai">AICM</span></h1>
+            <p class="hero-subtitle">Leading the way in innovative AI and creative solutions.</p>
+        </div>
+        <div class="hero-right">
+            <div class="path-container">
+                <svg class="path-svg" viewBox="0 0 600 450" aria-hidden="true" focusable="false">
+                    <path id="motionPath" d="M50,400 C150,100 450,100 550,400" class="tube-path-shadow" />
+                    <path d="M50,400 C150,100 450,100 550,400" class="tube-path" />
+                </svg>
+                <div class="gold-sphere"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>We are a dedicated team delivering AI-powered solutions and innovative services across multiple
+                industries.</p>
+        </div>
+        <div class="about-visual">
+            <div class="path-container">
+                <svg class="path-svg" viewBox="0 0 600 450" aria-hidden="true" focusable="false">
+                    <path id="aboutMotionPath" d="M50,50 C300,400 500,100 550,400" class="tube-path-shadow" />
+                    <path d="M50,50 C300,400 500,100 550,400" class="tube-path" />
+                </svg>
+                <div class="gold-sphere about-sphere"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-card">AI Consulting</div>
+            <div class="service-card">Creative Design</div>
+            <div class="service-card">Data Analytics</div>
+            <div class="service-card">Automation</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>AICM</h3>
+                <p>Innovating the future with AI-powered solutions and creative services.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: info@aicm.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 AICM. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Linked external JavaScript file named script.js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
